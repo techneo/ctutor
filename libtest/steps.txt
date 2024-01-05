@@ -1,0 +1,19 @@
+    1  ls
+    2  ar
+    3  which ar
+    4  man ar
+    5  ar rcs
+    6  code main.c
+    7  mv main.c add.c
+    8  gcc -std=c90
+    9  gcc -std=c90 -c add.c -o add.o
+   10  code add.h
+   11  ar rcs libadd.a add.o
+   12  code main.c
+   13  gcc -std=c90 main.c 
+   14  gcc -std=c90 main.c -L. -ladd
+   15  ls
+   16  ./a.out 
+   17  gcc -std=c90 main.c -L. -ladd -o main
+   18  history
+   19  history > steps.txt
